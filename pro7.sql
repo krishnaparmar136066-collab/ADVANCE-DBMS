@@ -1,7 +1,7 @@
 set serveroutput on
 declare
 
-cursor c1 is select id,name,city from customer  where name like'r%';
+cursor c1 is select id,name,city from customer;
 
 i customer.id%type;
 n customer.name%type;
