@@ -5,8 +5,8 @@ DECLARE
     sal NUMBER(6);
     dept NUMBER := &dept;
 BEGIN
-    SELECT empnm, salary INTO enm, sal
-    FROM empl
+    SELECT empnm, salary INTO enm, sal 
+    FROM empl 
     WHERE deptno = dept;
 
     DBMS_OUTPUT.PUT_LINE('Employee Name: ' || enm);
